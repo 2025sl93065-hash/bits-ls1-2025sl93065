@@ -3,12 +3,6 @@ pipeline {
 
     stages {
 
-        stage('Checkout') {
-            steps {
-                git 'https://github.com/2025sl93065-hash/bits-ls1-2025sl93065.git'
-            }
-        }
-
         stage('Build') {
             steps {
                 sh 'echo "Build Stage"'
@@ -34,7 +28,7 @@ EOF
 
         stage('Deploy') {
             steps {
-                sh 'echo "Deploy stage"'
+                sh 'echo "Deploy stage (temporary)"'
             }
         }
     }
